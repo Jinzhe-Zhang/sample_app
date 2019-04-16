@@ -22,3 +22,25 @@
        assert_select "title", "Home | #{@base_title}"
      end
    ```
+
+use 
+
+> git checkout -b static-pages
+
+to init a new branch
+
+then merge it at github
+
+
+
+
+
+
+
+
+
+
+
+
+
+

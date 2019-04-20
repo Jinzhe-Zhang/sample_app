@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
@@ -6,7 +6,6 @@ gem 'guard'
 gem 'guard-minitest'
 gem 'bootstrap-sass'
 gem 'rails-controller-testing'
-gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
@@ -45,8 +44,13 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bcrypt-ruby', :require => 'bcrypt'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+end
+
+group :production do
+  gem 'bcrypt'
 end
 
 group :test do

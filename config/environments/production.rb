@@ -69,7 +69,7 @@ Rails.application.configure do
   host = '120.77.158.41'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :tls            => true
+    :tls            => true,
     :address        => 'smtp.126.com',
     :port           => '465',
     :authentication => :plain,

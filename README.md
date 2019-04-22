@@ -1,6 +1,6 @@
 # README
 
-#### test 方法：
+#### 一些乱记的笔记：
 
 1. 删除Gemfile.lock文件
 

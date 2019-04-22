@@ -69,12 +69,13 @@ Rails.application.configure do
   host = '120.77.158.41'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
+    :tls            => true
     :address        => 'smtp.126.com',
-    :port           => '25',
+    :port           => '465',
     :authentication => :plain,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => '126.com',
+    :domain         => 'stmp.126.com',
     :enable_starttls_auto => true
   }
 
